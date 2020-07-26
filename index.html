@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+  <div>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="images/logo.png" width="60" height="30" class="d-inline-block align-top" alt="">
+        Quiz App
+      </a>
+    </nav>
+    <div>
+
+
+
+      <h1> HTML Quiz </h1>
+      <div class="for" id="intro">
+        <h1>welcome</h1>
+        <div class="intro">
+          <p><strong>Hello,</strong><br> Dear web developer are you ready ?
+          <br>Total question :4 </p>
+    <button class="start" onclick="nextButton()" id="nextbtn"> Start </button>
+
+        </div>
+      </div>
+      <div>
+        <h2 id='question'> </h2>
+        <ul id='answerList'> </ul>
+        
+    <button class="next" onclick="nextButton()" id="next"> Next </button>
+
+      </div>
+    </div>
+
+
+    <div  class=" footer  text-light  ">
+      <h3>developer : Hassan Javed</h3>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>

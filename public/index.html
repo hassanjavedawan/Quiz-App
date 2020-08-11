@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body onload="showQuestion(0)">
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.png" width="60" height="30" class="d-inline-block align-top" alt="">
+      Quiz App
+    </a>
+  </nav>
+
+  <div class="intro" id="intro">
+    <h2>WelCome </h2>
+    <hr>
+    <h4> Please Enter Your Name </h4>
+    <input type="text" name="Name" id="name" placeholder="Enter your name">
+    <br>
+    <button class="start mt-3" onclick="start()" id="start"> Start </button>
+  </div>
+
+
+
+  <div>
+    <div class="container mt-5" id="qus">
+      <div class="card">
+        <div class="card-header ">
+          <div class="d-block float-left">
+            <h4>JavaScript Quiz</h4>
+          </div>
+          <div class="d-block float-right" id="sec">00 </div>
+          <div class="d-block float-right"> :</div>
+          <div class="d-block float-right" id="min"> 00</div>
+
+        </div>
+        <div class="card-body">
+          <h5 class="card-title  " id="hQ"> What is your Name?</h5>
+          <li class="card-text  op" onclick="activeOption(this)"> Ali</li>
+          <li class="card-text  op" onclick="activeOption(this)"> Ghous</li>
+          <li class="card-text  op" onclick="activeOption(this)"> Hassan</li>
+
+        </div>
+        <div class="card-footer text-muted">
+          <button class="next float-right mr-5" onclick="next()" id="next">Next >></button>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+          <button class="next" onclick="result()">Show Result</button></a>
+      </div>
+    </div>
+
+  <div class="container  result" id="result">
+      <h2 class="text-center mt-2">Result</h2>
+      <div class="row">
+        <div class="col ">Student Name</div>
+        <div class="col " id="sName">abc</div>
+      </div>
+      <div class="row">
+        <h2>Congratulation  you have complete quiz</h2>
+        
+      </div>
+      
+    </div> 
+
+    <div class=" footer  text-light  ">
+      <h3>Developer : Hassan Javed</h3>
+    </div>
+</body>
+<script src="app.js"> </script>
+
+</html>
